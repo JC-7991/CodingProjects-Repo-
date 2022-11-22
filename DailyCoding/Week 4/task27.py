@@ -9,6 +9,7 @@ def areBracketsBalanced(expr):
             stack.append(char)
 
         else:
+            
             if not stack:
                 return False
 
