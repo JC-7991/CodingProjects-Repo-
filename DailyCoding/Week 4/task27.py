@@ -18,11 +18,11 @@ def areBracketsBalanced(expr):
                 if char != ")":
                     return False
 
-            if current_char == '{':
+            elif current_char == '{':
                 if char != "}":
                     return False
 
-            if current_char == '[':
+            elif current_char == '[':
                 if char != "]":
                     return False
  
