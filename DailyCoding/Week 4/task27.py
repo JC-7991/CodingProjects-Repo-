@@ -31,13 +31,18 @@ def areBracketsBalanced(expr):
 
     return True
 
-if __name__ == "__main__":
+def isBalanced(str):
 
-    expr = "{()}[]"
-
-    if areBracketsBalanced(expr):
+    if areBracketsBalanced(str):
         print("Balanced.")
 
     else:
         print("Not balanced.")
- 
+
+if __name__ == "__main__":
+
+    expr = "{()}[]"
+    isBalanced(expr)
+
+    expr = "{](]"
+    isBalanced(expr)
