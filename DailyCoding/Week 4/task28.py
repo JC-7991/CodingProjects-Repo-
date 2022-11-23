@@ -4,15 +4,10 @@
 
 def justify_line(x, y, z):
 
-	if len(x) == 1:
-		return x[0].ljust(z)
-
-	else:
-
-		narrow_spaces, wider_words = divmod(z - y, len(x) - 1)
-		ns = " " * narrow_spaces
-		ws = " " * (narrow_spaces + 1)
-		return ns.join([ws.join(x[0:wider_words + 1]), *x[wider_words + 1:]])
+    narrow_spaces, wider_words = divmod(z - y, len(x) - 1)
+    ns = " " * narrow_spaces
+    ws = " " * (narrow_spaces + 1)
+    return ns.join([ws.join(x[0:wider_words + 1]), *x[wider_words + 1:]])
 
 
 def justify(words, z):
@@ -24,7 +19,7 @@ def justify(words, z):
 	for word in words:
 		for i in range(0, len(word), z):
 
-			chunk = word[i:i + z]
+			chunk = word[i: i + z]
 
 			if len(chunk) + current_length + len(current_words) <= z:
 				current_words.append(chunk)
