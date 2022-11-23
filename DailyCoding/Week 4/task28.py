@@ -7,7 +7,7 @@ def justify_line(x, y, z):
     narrow_spaces, wider_words = divmod(z - y, len(x) - 1)
     ns = " " * narrow_spaces
     ws = " " * (narrow_spaces + 1)
-    return ns.join([ws.join(x[0:wider_words + 1]), *x[wider_words + 1:]])
+    return ns.join([ws.join(x[0: wider_words + 1]), * x[wider_words + 1:]])
 
 
 def justify(words, z):
