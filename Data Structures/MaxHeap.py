@@ -12,3 +12,8 @@ class MaxHeap:
     def push(self, data):
         self.heap.append(data)
         self.__floatUp(len(self.heap) - 1)
+
+    def peek(self):
+        
+        if self.heap[1]:
+            return self.heap[1]
