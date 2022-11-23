@@ -21,4 +21,5 @@ class MaxHeap:
             return False
     
     def pop(self):
-        pass
+        if len(self.heap) > 2:
+            pass
