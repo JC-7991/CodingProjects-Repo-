@@ -24,3 +24,4 @@ class MaxHeap:
         
         if len(self.heap) > 2:
             self.__swap(1, len(self.heap) - 1)
+            max = self.heap.pop()
