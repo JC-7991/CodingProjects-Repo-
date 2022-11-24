@@ -30,3 +30,5 @@ class MaxHeap:
             max = self.heap.pop()
         else:
             max = False
+            
+        return max
