@@ -13,25 +13,25 @@ def justify_line(x, y, z):
 def justify(words, z):
 
 	res = []
-	current_length = 0
-	current_words = []
+	cur_length = 0
+	cur_words = []
 
 	for word in words:
 		for i in range(0, len(word), z):
 
 			chunk = word[i: i + z]
 
-			if len(chunk) + current_length + len(current_words) <= z:
-				current_words.append(chunk)
-				current_length += len(chunk)
+			if len(chunk) + cur_length + len(cur_words) <= z:
+				cur_words.append(chunk)
+				cur_length += len(chunk)
 
 			else:
-				res.append(justify_line(current_words, current_length, z))
-				current_words = [chunk]
-				current_length = len(chunk)
+				res.append(justify_line(cur_words, cur_length, z))
+				cur_words = [chunk]
+				cur_length = len(chunk)
 
-	if current_words:
-		res.append(justify_line(current_words, current_length, z))
+	if cur_words:
+		res.append(justify_line(cur_words, cur_length, z))
 
 	return res
 
