@@ -30,5 +30,8 @@ class MaxHeap:
             max = self.heap.pop()
         else:
             max = False
-            
+
         return max
+    
+    def __swap(self, i, j):
+        pass
