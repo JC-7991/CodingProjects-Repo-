@@ -38,5 +38,6 @@ def justify(words, z):
 if __name__ == '__main__':
 
 	print("\n".join(justify(["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"], 16)))
+	print("\n".join(justify(["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"], 14)))
 	print("\n".join(justify(["sonic", "heroes", "is", "the", "best", "game", "ever", "made"], 16)))
 	print("\n".join(justify(["sonic", "heroes", "is", "the", "best", "game", "ever", "made"], 20)))
