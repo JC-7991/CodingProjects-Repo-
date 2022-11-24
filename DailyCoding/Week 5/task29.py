@@ -1,14 +1,14 @@
 # implement run-length encoding and decoding
 
 s = input()
-cursor = ""
+
+cursor, buildup = "", ""
 streak = 1
-buildup = ""
 
 for a in s:
 
     if a != cursor:
-        
+
         if cursor != "":
             buildup += str(streak) + cursor
         cursor = a
