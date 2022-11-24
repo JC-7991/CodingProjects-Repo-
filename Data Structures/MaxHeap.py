@@ -23,4 +23,4 @@ class MaxHeap:
     def pop(self):
         
         if len(self.heap) > 2:
-            pass
+            self.__swap(1, len(self.heap) - 1)
