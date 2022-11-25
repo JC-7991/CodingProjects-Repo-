@@ -71,4 +71,10 @@ class MaxHeap:
             self.__bubbleDown(largest)
 
         def __str__(self):
-            return str(self.heap) 
+            return str(self.heap)
+
+if __name__ == "__main__":
+
+    m = MaxHeap([95, 3, 21])
+    m.push(10)
+    print(m)
