@@ -33,7 +33,7 @@ class MaxHeap:
 
         elif len(self.heap) == 2:
             max = self.heap.pop()
-            
+
         else:
             max = False
 
@@ -54,4 +54,8 @@ class MaxHeap:
             self.__floatUp(parent)
 
     def __bubbleDown(self, index):
-        pass
+        
+        left = index * 2
+        right = index * 2 + 1
+        largest = index
+        
