@@ -34,7 +34,7 @@ class MaxHeap:
         return max
     
     def __swap(self, i, j):
-        self.heap[i], self.heap[j]
+        self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
 
     def __floatUp(self, index):
         pass
