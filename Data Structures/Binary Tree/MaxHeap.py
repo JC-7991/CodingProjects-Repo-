@@ -21,7 +21,7 @@ class MaxHeap:
 
         if self.heap[1]:
             return self.heap[1]
-            
+
         else:
             return False
     
@@ -59,3 +59,6 @@ class MaxHeap:
         left = index * 2
         right = index * 2 + 1
         largest = index
+
+        if len(self.heap) > left and self.heap[largest] < self.heap[left]:
+            largest = left
