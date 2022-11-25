@@ -62,3 +62,6 @@ class MaxHeap:
 
         if len(self.heap) > left and self.heap[largest] < self.heap[left]:
             largest = left
+
+        if len(self.heap) > right and self.heap[largest] < self.heap[right]:
+            largest = right
