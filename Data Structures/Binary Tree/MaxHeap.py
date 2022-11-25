@@ -69,4 +69,6 @@ class MaxHeap:
         if largest != index:
             self.__swap(index, largest)
             self.__bubbleDown(largest)
-            
+
+        def __str__(self):
+            return str(self.heap) 
