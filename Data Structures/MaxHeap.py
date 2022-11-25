@@ -35,3 +35,9 @@ class MaxHeap:
     
     def __swap(self, i, j):
         pass
+
+    def __floatUp(self, index):
+        pass
+
+    def __bubbleDown(self, index):
+        pass
