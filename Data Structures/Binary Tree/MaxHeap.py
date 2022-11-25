@@ -65,3 +65,8 @@ class MaxHeap:
 
         if len(self.heap) > right and self.heap[largest] < self.heap[right]:
             largest = right
+
+        if largest != index:
+            self.__swap(index, largest)
+            self.__bubbleDown(largest)
+            
