@@ -7,7 +7,7 @@ class MaxHeap:
     def __init__(self, items = []):
 
         super().__init__()
-        self.heap = 0
+        self.heap = [0]
 
         for item in items:
             self.heap.append(item)
@@ -78,3 +78,5 @@ if __name__ == "__main__":
     m = MaxHeap([95, 3, 21])
     m.push(10)
     print(m)
+    print(m.pop())
+    print(m.peek())
