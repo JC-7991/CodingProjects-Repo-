@@ -41,7 +41,9 @@ class MaxHeap:
         self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
 
     def __floatUp(self, index):
-        pass
+        parent = index // 2
+        if index <= 1:
+            return
 
     def __bubbleDown(self, index):
         pass
