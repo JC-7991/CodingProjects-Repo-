@@ -30,8 +30,10 @@ class MaxHeap:
             self.__swap(1, len(self.heap) - 1)
             max = self.heap.pop()
             self.__bubbleDown(1)
+
         elif len(self.heap) == 2:
             max = self.heap.pop()
+            
         else:
             max = False
 
@@ -46,7 +48,7 @@ class MaxHeap:
 
         if index <= 1:
             return
-            
+
         elif self.heap[index] > self.heap[parent]:
             self.__swap(index, parent)
             self.__floatUp(parent)
