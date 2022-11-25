@@ -44,6 +44,8 @@ class MaxHeap:
         parent = index // 2
         if index <= 1:
             return
+        elif self.heap[index] > self.heap[parent]:
+            self.__swap(index, parent)
 
     def __bubbleDown(self, index):
         pass
