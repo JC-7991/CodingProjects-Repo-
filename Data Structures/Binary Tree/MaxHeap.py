@@ -79,7 +79,8 @@ if __name__ == "__main__":
 
     m.push(10)
     m.push(20)
-    
+    m.push(30)
+
     print(m)
     print(m.pop())
     print(m.peek())
