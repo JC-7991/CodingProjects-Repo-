@@ -87,4 +87,7 @@ if __name__ == "__main__":
 
     n = MaxHeap([1, 25, 65, 120, 34, 12])
 
-    
+    n.push(15)
+
+    print(m)
+    m.pop()
