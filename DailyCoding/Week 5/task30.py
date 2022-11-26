@@ -38,3 +38,7 @@ if __name__ == "__main__":
     arr = [7, 8, 12, 0, 2, 1, 32, 12, 10, 11, 0, 14, 0, 0, 34]
     x = len(arr)
     print(max_water(arr, x))
+
+    arr = [1, 2, 3, 0, 3, 2, 1]
+    x = len(arr)
+    print(max_water(arr, x))
