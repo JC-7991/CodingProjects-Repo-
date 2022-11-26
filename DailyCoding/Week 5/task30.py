@@ -31,14 +31,14 @@ if __name__ == "__main__":
     x = len(arr)
     print(max_water(arr, x))
 
-    arr = [1, 0, 3, 1, 2, 2, 1, 0, 0, 1, 0, 1]
-    x = len(arr)
-    print(max_water(arr, x))
+    arr2 = [1, 0, 3, 1, 2, 2, 1, 0, 0, 1, 0, 1]
+    x2 = len(arr2)
+    print(max_water(arr2, x2))
 
-    arr = [7, 8, 12, 0, 2, 1, 32, 12, 10, 11, 0, 14, 0, 0, 34]
-    x = len(arr)
-    print(max_water(arr, x))
+    arr3 = [7, 8, 12, 0, 2, 1, 32, 12, 10, 11, 0, 14, 0, 0, 34]
+    x3 = len(arr3)
+    print(max_water(arr3, x3))
 
-    arr = [1, 2, 3, 0, 3, 2, 1]
-    x = len(arr)
-    print(max_water(arr, x))
+    arr4 = [1, 2, 3, 0, 3, 2, 1]
+    x4 = len(arr4)
+    print(max_water(arr4, x4))
