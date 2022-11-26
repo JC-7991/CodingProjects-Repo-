@@ -84,3 +84,7 @@ if __name__ == "__main__":
     print(m)
     print(m.pop())
     print(m.peek())
+
+    n = MaxHeap([1, 25, 65, 120, 34, 12])
+
+    
