@@ -76,7 +76,6 @@ class MaxHeap:
 if __name__ == "__main__":
 
     m = MaxHeap([95, 3, 21])
-    n = MaxHeap([1, 25, 65, 120, 34, 12])
 
     m.push(10)
     m.push(20)
@@ -84,10 +83,4 @@ if __name__ == "__main__":
 
     print(m)
     print(m.pop())
-    print(m.peek())    
-
-    n.push(15)
-
-    print(m)
-    m.pop()
-    print(m.pop())
+    print(m.peek())
