@@ -33,7 +33,7 @@ def arbitrage(currency_tuple: tuple, rates_matrix: Tuple[Tuple[float, ...]]):
     
     min_dist[source] = source
 
-    for _ in range(n-1):
+    for _ in range(n - 1):
         for source_curr in range(n):
             for dest_curr in range(n):
 
