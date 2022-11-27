@@ -27,3 +27,4 @@ def edit_distance(str1, str2):
 
 print(edit_distance("kitten", "sitting"))
 print(edit_distance("medium", "median"))
+print(edit_distance("sonic", "sanic"))
