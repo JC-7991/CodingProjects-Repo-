@@ -26,11 +26,11 @@ def arbitrage(currency_tuple: tuple, rates_matrix: Tuple[Tuple[float, ...]]):
 
     trans_graph = negate_logarithm_convertor(rates_matrix)
     source = 0
+
     n = len(trans_graph)
     min_dist = [float('inf')] * n
-
-    pre = [-1] * n
     
+    pre = [-1] * n
     min_dist[source] = source
 
     for _ in range(n - 1):
