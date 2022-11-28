@@ -3,3 +3,7 @@
 # While lists use a contiguous memory block to store references to their data, 
 # linked lists store references as part of their own elements. 
 
+class Node:
+
+    def __init__(self, d, n = None, p = None):
+        pass
