@@ -6,4 +6,6 @@
 class Node:
 
     def __init__(self, d, n = None, p = None):
-        pass
+        self.data = d
+        self.next_node = n
+        self.prev_node = p
