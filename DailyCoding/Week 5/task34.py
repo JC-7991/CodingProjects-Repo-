@@ -28,3 +28,6 @@ if __name__ == "__main__":
      
     str = "sonicheroes"
     print(min_insert(str, 0, len(str) - 1))
+
+    str = "cringelord"
+    print(min_insert(str, 0, len(str) - 1))
