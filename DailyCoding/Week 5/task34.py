@@ -5,3 +5,26 @@
 # minimum length that can be made, return 
 # the lexicographically earliest one (the first one alphabetically).
 
+import sys
+ 
+def min_insert(str, x, y):
+
+    if(x > y):
+        return sys.maxsize
+
+    if(x == y):
+        return 0
+
+    if(x == y - 1):
+        return 0 if(str[x] == str[y]) else 1
+     
+    if(str[x] == str[y]):
+        return min_insert(str, x + 1, y - 1)
+
+    else:
+        return(min(min_insert(str, x, y - 1), min_insert(str, x + 1, y)) + 1)
+
+if __name__ == "__main__":
+     
+    str = "sonicheroes"
+    print(min_insert(str, 0, len(str) - 1))
