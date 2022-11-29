@@ -6,4 +6,5 @@
 class LinkedList:
 
     def __init__(self, r = None):
-        pass
+        self.root = r
+        self.size = 0
