@@ -9,5 +9,5 @@ class LinkedList:
         self.root = r
         self.size = 0
     
-    def add(self):
+    def add(self, d):
         pass
