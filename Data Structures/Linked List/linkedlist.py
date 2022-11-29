@@ -17,4 +17,6 @@ class LinkedList:
         self.size += 1
     
     def find(self, d):
-        pass
+        this_node = self.root
+        while this_node is not None:
+            pass
