@@ -3,6 +3,8 @@
 # While lists use a contiguous memory block to store references to their data, 
 # linked lists store references as part of their own elements.
 
+from NodeClass import Node
+
 class LinkedList:
 
     def __init__(self, r = None):
@@ -10,4 +12,4 @@ class LinkedList:
         self.size = 0
     
     def add(self, d):
-        pass
+        new_node = Node(d, self.root)
