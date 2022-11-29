@@ -15,3 +15,6 @@ class LinkedList:
         new_node = Node(d, self.root)
         self.root = new_node
         self.size += 1
+    
+    def find(self, d):
+        pass
