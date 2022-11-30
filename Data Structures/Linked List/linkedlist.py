@@ -31,4 +31,5 @@ class LinkedList:
         return None
 
     def remove(self, d):
-        pass
+        this_node = self.root
+        prev_node = None
