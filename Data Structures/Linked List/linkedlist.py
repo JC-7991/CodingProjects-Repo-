@@ -72,11 +72,12 @@ if __name__ == "__main__":
     myList.add(5)
     myList.add(8)
     myList.add(12)
+    myList.add(17)
     myList.print_list()
 
     print("size = " + str(myList.size))
     myList.remove(8)
-    
+
     print("size = " + str(myList.size))
     print(myList.find(5))
     print(myList.root)
