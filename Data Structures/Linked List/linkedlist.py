@@ -33,3 +33,6 @@ class LinkedList:
     def remove(self, d):
         this_node = self.root
         prev_node = None
+
+        while this_node is not None:
+            pass
