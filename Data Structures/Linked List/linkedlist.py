@@ -62,5 +62,19 @@ class LinkedList:
         while this_node is not None:
             print(this_node, end = '->')
             this_node = this_node.next_node
-            
+
         print('None')
+
+if __name__ == "__main__":
+
+    myList = LinkedList()
+    myList.add(5)
+    myList.add(8)
+    myList.add(12)
+    myList.print_list()
+
+    print("size = " + str(myList.size))
+    myList.remove(8)
+    print("size = " + str(myList.size))
+    print(myList.find(5))
+    print(myList.root)
