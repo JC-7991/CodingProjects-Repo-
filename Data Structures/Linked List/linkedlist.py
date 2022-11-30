@@ -56,4 +56,9 @@ class LinkedList:
         return False
 
     def print_list(self):
-        pass
+        
+        this_node = self.root
+
+        while this_node is not None:
+            print(this_node, end = '->')
+            this_node = this_node.next_node
