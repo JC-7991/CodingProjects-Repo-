@@ -24,6 +24,8 @@ class LinkedList:
 
             if this_node.data == d:
                 return d
-                
+
             else:
                 this_node = this_node.next_node
+        
+        return None
