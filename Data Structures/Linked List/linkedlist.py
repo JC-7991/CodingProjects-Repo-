@@ -36,4 +36,8 @@ class LinkedList:
         prev_node = None
 
         while this_node is not None:
-            pass
+            
+            if this_node.data == d:
+
+                if prev_node is not None:
+                    prev_node.next_node == this_node.next_node
