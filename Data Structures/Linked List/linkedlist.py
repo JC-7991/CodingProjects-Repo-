@@ -41,3 +41,10 @@ class LinkedList:
 
                 if prev_node is not None:
                     prev_node.next_node == this_node.next_node
+                else:
+                    self.root = this_node.next_node
+                self.size -= 1
+                return True
+
+            else:
+                pass
