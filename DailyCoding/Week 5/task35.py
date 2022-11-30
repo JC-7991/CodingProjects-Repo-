@@ -37,4 +37,7 @@ def sorted(chars):
     return chars
 
 if __name__ == '__main__':
-    print (sorted(['G', 'B', 'R', 'R', 'B', 'R', 'G']))
+
+    print(sorted(['G', 'B', 'R', 'R', 'B', 'R', 'G']))
+    print(sorted(['G', 'G', 'R', 'R', 'R', 'B', 'B']))
+    print(sorted(['B', 'G', 'R', 'B', 'G', 'R', 'B']))
