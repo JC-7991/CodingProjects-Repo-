@@ -29,3 +29,6 @@ class LinkedList:
                 this_node = this_node.next_node
         
         return None
+
+    def remove(self, d):
+        pass
