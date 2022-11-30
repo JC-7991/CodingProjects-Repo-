@@ -62,3 +62,5 @@ class LinkedList:
         while this_node is not None:
             print(this_node, end = '->')
             this_node = this_node.next_node
+            
+        print('None')
