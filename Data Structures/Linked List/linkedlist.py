@@ -68,6 +68,7 @@ class LinkedList:
 if __name__ == "__main__":
 
     myList = LinkedList()
+
     myList.add(5)
     myList.add(8)
     myList.add(12)
@@ -75,6 +76,7 @@ if __name__ == "__main__":
 
     print("size = " + str(myList.size))
     myList.remove(8)
+    
     print("size = " + str(myList.size))
     print(myList.find(5))
     print(myList.root)
