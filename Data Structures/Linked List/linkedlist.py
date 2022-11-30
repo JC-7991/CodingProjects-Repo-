@@ -46,8 +46,11 @@ class LinkedList:
                     self.root = this_node.next_node
 
                 self.size -= 1
-                
+
                 return True
 
             else:
-                pass
+                prev_node = this_node
+                this_node = this_node.next_node
+
+        return False
