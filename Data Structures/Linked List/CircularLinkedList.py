@@ -13,4 +13,5 @@ class CircularLinkedList:
             self.root.next_node == self.root
         
         else:
-            pass
+            new_node = Node(d, self.root.next_node)
+            self.root.next_node = new_node
