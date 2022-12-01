@@ -5,4 +5,5 @@ class CircularLinkedList:
         self.size = 0
 
     def add(self, d):
-        pass
+        if self.size == 0:
+            pass
