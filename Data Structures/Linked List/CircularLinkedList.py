@@ -1,3 +1,5 @@
+from LinkedList import *
+
 class CircularLinkedList:
 
     def __init__(self, r = None):
@@ -5,5 +7,6 @@ class CircularLinkedList:
         self.size = 0
 
     def add(self, d):
+
         if self.size == 0:
-            pass
+            self.root = Node(d)
