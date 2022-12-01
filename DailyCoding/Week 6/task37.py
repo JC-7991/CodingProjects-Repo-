@@ -7,14 +7,20 @@ def powerSet(set, size):
      
     pow_size = (int) (math.pow(2, size))
     counter = 0
-    j = 0
+    x = 0
 
     for counter in range(0, pow_size):
-        for j in range(0, size):
-            if((counter & (1 << j)) > 0):
-                print(set[j], end = "")
+        for x in range(0, size):
+
+            if((counter & (1 << x)) > 0):
+                print(set[x], end = "")
+
         print("")
 
 if __name__ == "__main__":
+
     set = ['a', 'b', 'c']
     powerSet(set, 3)
+
+    set = ['a', 'b', 'c']
+    powerSet(set, 2)
