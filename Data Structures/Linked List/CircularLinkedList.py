@@ -10,3 +10,4 @@ class CircularLinkedList:
 
         if self.size == 0:
             self.root = Node(d)
+            self.root.next_node == self.root
