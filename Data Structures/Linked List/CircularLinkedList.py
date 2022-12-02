@@ -29,3 +29,5 @@ class CircularLinkedList:
 
             elif this_node.next_node == self.root:
                 return False
+
+            this_node = this_node.next_node
