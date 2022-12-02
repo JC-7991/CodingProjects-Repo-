@@ -23,8 +23,9 @@ class CircularLinkedList:
         this_node = self.root
 
         while True:
-            
+
             if this_node.data == d:
                 return d
+
             elif this_node.next_node == self.root:
-                pass
+                return False
