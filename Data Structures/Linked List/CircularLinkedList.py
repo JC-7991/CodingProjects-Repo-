@@ -21,4 +21,5 @@ class CircularLinkedList:
     def find(self, d):
         this_node = self.root
         while True:
-            pass
+            if this_node.data == d:
+                pass
