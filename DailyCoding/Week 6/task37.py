@@ -6,8 +6,7 @@ import math;
 def powerSet(set, size):
      
     pow_size = (int) (math.pow(2, size))
-    counter = 0
-    x = 0
+    x, counter = 0, 0
 
     for counter in range(0, pow_size):
         for x in range(0, size):
@@ -24,9 +23,6 @@ if __name__ == "__main__":
 
     set = ['a', 'b', 'c']
     powerSet(set, 2)
-
-    set = ['1', '2', '3', '4']
-    powerSet(set, 4)
 
     set = ['x', 'y']
     powerSet(set, 2)

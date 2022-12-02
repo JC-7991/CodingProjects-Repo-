@@ -17,3 +17,6 @@ class CircularLinkedList:
             self.root.next_node = new_node
         
         self.size += 1
+
+    def find(self, d):
+        pass
