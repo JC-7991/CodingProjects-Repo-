@@ -26,3 +26,6 @@ if __name__ == "__main__":
 
     set = ['x', 'y']
     powerSet(set, 2)
+
+    set = ['1', '2', '3']
+    powerSet(set, 3)
