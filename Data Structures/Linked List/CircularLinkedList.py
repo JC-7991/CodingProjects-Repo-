@@ -15,3 +15,5 @@ class CircularLinkedList:
         else:
             new_node = Node(d, self.root.next_node)
             self.root.next_node = new_node
+        
+        self.size += 1
