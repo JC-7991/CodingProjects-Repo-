@@ -31,3 +31,6 @@ class CircularLinkedList:
                 return False
 
             this_node = this_node.next_node
+
+    def remove(self, d):
+        pass
