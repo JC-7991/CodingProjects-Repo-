@@ -36,7 +36,7 @@ def printSolution(space):
         print(str(x).replace(',', '').replace('\'', ''))
     print()
  
-def nQueen(space, x):
+def queen(space, x):
  
     if x == len(space):
         printSolution(space)
@@ -47,7 +47,7 @@ def nQueen(space, x):
         if is_safe(space, x, i):
 
             space[x][i] = 'Q'
-            nQueen(space, x + 1)
+            queen(space, x + 1)
             space[x][i] = '–'
  
  
@@ -55,4 +55,4 @@ if __name__ == '__main__':
 
     N = 8
     space = [['–' for x in range(N)] for y in range(N)]
-    nQueen(space, 0)
+    queen(space, 0)
