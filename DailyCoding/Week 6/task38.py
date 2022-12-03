@@ -13,6 +13,7 @@ def is_safe(space, x, y):
     (i, j) = (x, y)
 
     while i >= 0 and j >= 0:
+
         if space[i][j] == 'Q':
             return False
 
@@ -22,6 +23,7 @@ def is_safe(space, x, y):
     (i, j) = (x, y)
 
     while i >= 0 and j < len(space):
+        
         if space[i][j] == 'Q':
             return False
 
