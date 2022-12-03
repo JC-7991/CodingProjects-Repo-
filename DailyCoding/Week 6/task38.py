@@ -11,22 +11,27 @@ def is_safe(mat, x, y):
             return False
  
     (i, j) = (x, y)
+
     while i >= 0 and j >= 0:
         if mat[i][j] == 'Q':
             return False
+
         i = i - 1
         j = j - 1
  
     (i, j) = (x, y)
+
     while i >= 0 and j < len(mat):
         if mat[i][j] == 'Q':
             return False
+
         i = i - 1
         j = j + 1
  
     return True
  
 def printSolution(mat):
+
     for x in mat:
         print(str(x).replace(',', '').replace('\'', ''))
     print()
@@ -42,7 +47,7 @@ def nQueen(mat, x):
         if is_safe(mat, x, i):
 
             mat[x][i] = 'Q'
- 
+
             nQueen(mat, x + 1)
  
             mat[x][i] = '–'
