@@ -47,9 +47,7 @@ def nQueen(mat, x):
         if is_safe(mat, x, i):
 
             mat[x][i] = 'Q'
-
             nQueen(mat, x + 1)
- 
             mat[x][i] = '–'
  
  
