@@ -4,20 +4,20 @@
 # threatening each other, i.e. no two queens share the
 # same row, column, or diagonal.
 
-def isSafe(mat, r, c):
+def is_safe(mat, x, y):
  
-    for i in range(r):
-        if mat[i][c] == 'Q':
+    for i in range(x):
+        if mat[i][y] == 'Q':
             return False
  
-    (i, j) = (r, c)
+    (i, j) = (x, y)
     while i >= 0 and j >= 0:
         if mat[i][j] == 'Q':
             return False
         i = i - 1
         j = j - 1
  
-    (i, j) = (r, c)
+    (i, j) = (x, y)
     while i >= 0 and j < len(mat):
         if mat[i][j] == 'Q':
             return False
@@ -27,25 +27,25 @@ def isSafe(mat, r, c):
     return True
  
 def printSolution(mat):
-    for r in mat:
-        print(str(r).replace(',', '').replace('\'', ''))
+    for x in mat:
+        print(str(x).replace(',', '').replace('\'', ''))
     print()
  
-def nQueen(mat, r):
+def nQueen(mat, x):
  
-    if r == len(mat):
+    if x == len(mat):
         printSolution(mat)
         return
  
     for i in range(len(mat)):
 
-        if isSafe(mat, r, i):
+        if is_safe(mat, x, i):
 
-            mat[r][i] = 'Q'
+            mat[x][i] = 'Q'
  
-            nQueen(mat, r + 1)
+            nQueen(mat, x + 1)
  
-            mat[r][i] = '–'
+            mat[x][i] = '–'
  
  
 if __name__ == '__main__':
