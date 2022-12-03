@@ -54,7 +54,5 @@ def nQueen(space, x):
 if __name__ == '__main__':
 
     N = 8
-
     space = [['–' for x in range(N)] for y in range(N)]
- 
     nQueen(space, 0)
