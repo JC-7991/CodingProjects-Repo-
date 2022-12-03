@@ -1,6 +1,6 @@
-# You have an N by N board. Write a function that, given N,
+# You have an a by a board. Write a function that, given a,
 # returns the number of possible arrangements of the board 
-# where N queens can be placed on the board without 
+# where a queens can be placed on the board without 
 # threatening each other, i.e. no two queens share the
 # same row, column, or diagonal.
 
@@ -23,7 +23,7 @@ def is_safe(space, x, y):
     (i, j) = (x, y)
 
     while i >= 0 and j < len(space):
-        
+
         if space[i][j] == 'Q':
             return False
 
@@ -55,6 +55,6 @@ def queen(space, x):
  
 if __name__ == '__main__':
 
-    N = 8
-    space = [['–' for x in range(N)] for y in range(N)]
+    a = 8
+    space = [['–' for x in range(a)] for y in range(a)]
     queen(space, 0)
