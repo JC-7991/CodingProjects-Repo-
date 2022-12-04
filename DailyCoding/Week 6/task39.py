@@ -4,3 +4,4 @@
 # the board state at each step. Since it's an infinite board, print 
 # out only the relevant coordinates, i.e. from the top-leftmost 
 # live cell to bottom-rightmost live cell.
+
