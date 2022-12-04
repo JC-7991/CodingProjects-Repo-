@@ -5,17 +5,17 @@
 # out only the relevant coordinates, i.e. from the top-leftmost 
 # live cell to bottom-rightmost live cell.
 
-def nextGeneration(grid, M, N):
+def nextGeneration(grid, x, y):
 
-    future = [[0 for i in range(N)] for j in range(M)]
+    future = [[0 for i in range(y)] for j in range(x)]
 
-    for l in range(M):
-        for m in range(N):
+    for l in range(x):
+        for m in range(y):
              
             aliveNeighbours = 0
             for i in range(-1,2):
                 for j in range(-1,2):
-                    if ((l+i>=0 and l+i<M) and (m+j>=0 and m+j<N)):
+                    if ((l+i>=0 and l+i<x) and (m+j>=0 and m+j<y)):
                         aliveNeighbours += grid[l + i][m + j]
  
             aliveNeighbours -= grid[l][m]
@@ -34,15 +34,15 @@ def nextGeneration(grid, M, N):
  
  
     print("Next Generation")
-    for i in range(M):
-        for j in range(N):
+    for i in range(x):
+        for j in range(y):
             if (future[i][j] == 0):
                 print(".",end="")
             else:
                 print("*",end="")
         print()
  
-M, N = 10,10
+x, y = 10,10
 grid = [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     [ 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 ],
     [ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 ],
@@ -56,8 +56,8 @@ grid = [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 ]
 
 print("Original Generation")
-for i in range(M):
-    for j in range(N):
+for i in range(x):
+    for j in range(y):
         
         if(grid[i][j] == 0):
             print(".",end = "")
@@ -65,4 +65,4 @@ for i in range(M):
             print("*",end = "")
     print()
 print()
-nextGeneration(grid, M, N)
+nextGeneration(grid, x, y)
