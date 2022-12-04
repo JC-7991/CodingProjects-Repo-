@@ -21,13 +21,13 @@ def nextGen(grid, x, y):
  
             aliveNeighbours -= grid[l][m]
  
-            if ((grid[l][m] == 1) and (aliveNeighbours < 2)):
+            if((grid[l][m] == 1) and (aliveNeighbours < 2)):
                 future[l][m] = 0
 
-            elif ((grid[l][m] == 1) and (aliveNeighbours > 3)):
+            elif((grid[l][m] == 1) and (aliveNeighbours > 3)):
                 future[l][m] = 0
 
-            elif ((grid[l][m] == 0) and (aliveNeighbours == 3)):
+            elif((grid[l][m] == 0) and (aliveNeighbours == 3)):
                 future[l][m] = 1
  
             else:
@@ -38,7 +38,7 @@ def nextGen(grid, x, y):
     for i in range(x):
         for j in range(y):
 
-            if (future[i][j] == 0):
+            if(future[i][j] == 0):
                 print(".", end="")
 
             else:
@@ -48,7 +48,7 @@ def nextGen(grid, x, y):
 if __name__ == "__main__":
 
     x, y = 10, 10
-    
+
     grid = [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
         [ 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 ],
         [ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 ],
