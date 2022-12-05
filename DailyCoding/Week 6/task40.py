@@ -2,7 +2,7 @@
 # occurs three times except for one integer, which 
 # only occurs once, find and return the non-duplicated integer.
 
-def getSingle(arr, x):
+def singleElement(arr, x):
 
     ones = 0
     twos = 0
@@ -21,4 +21,4 @@ if __name__ == "__main__":
 
     arr = [3, 3, 2, 3]
     x = len(arr)
-    print("The element with single occurrence is", getSingle(arr, x))
+    print("The element with single occurrence is", singleElement(arr, x))
