@@ -10,13 +10,9 @@ def getSingle(arr, x):
     for i in range(x):
 
         twos = twos ^ (ones & arr[i])
-
         ones = ones ^ arr[i]
-
         mask = ~(ones & twos)
-
         ones &= mask
-
         twos &= mask
 
     return ones
