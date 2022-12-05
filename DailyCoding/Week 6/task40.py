@@ -10,15 +10,19 @@ def getSingle(arr, x):
     for i in range(x):
 
         twos = twos ^ (ones & arr[i])
+
         ones = ones ^ arr[i]
+
         mask = ~(ones & twos)
+
         ones &= mask
+
         twos &= mask
 
     return ones
 
 if __name__ == "__main__":
 
-    arr = [3, 3, 2, 3, 5, 5, 6, 6, 7, 7, 8, 8]
+    arr = [3, 3, 2, 3, 3]
     x = len(arr)
     print("The element with single occurrence is", getSingle(arr, x))
