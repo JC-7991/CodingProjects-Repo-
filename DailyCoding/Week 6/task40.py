@@ -19,6 +19,6 @@ def singleElement(arr, x):
 
 if __name__ == "__main__":
 
-    arr = [3, 3, 2, 3]
+    arr = [3, 3, 3, 2]
     x = len(arr)
     print("The element with single occurrence is", singleElement(arr, x))
