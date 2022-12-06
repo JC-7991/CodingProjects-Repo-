@@ -26,3 +26,13 @@ if __name__  == "__main__":
 
     else:
         print("No subset with given sum.")
+
+    set = [5, 10, 15, 20, 25]
+    sum = 30
+    x = len(set)
+
+    if(is_subset(set, x, sum) == True):
+        print("Found a subset with given sum.")
+
+    else:
+        print("No subset with given sum.")
