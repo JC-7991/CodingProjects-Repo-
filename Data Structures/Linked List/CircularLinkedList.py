@@ -38,4 +38,11 @@ class CircularLinkedList:
         prev_node = None
 
         while True:
-            pass
+            
+            if this_node.data == d:
+
+                if prev_node is not None:
+                    prev_node.next_node = this_node.next_node
+                    
+                else:
+                    pass
