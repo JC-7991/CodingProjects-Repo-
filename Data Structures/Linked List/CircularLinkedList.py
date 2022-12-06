@@ -61,3 +61,6 @@ class CircularLinkedList:
 
             prev_node = this_node
             this_node = this_node.next_node
+
+    def print_list(self):
+        pass
