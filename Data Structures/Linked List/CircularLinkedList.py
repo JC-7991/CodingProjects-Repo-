@@ -57,4 +57,7 @@ class CircularLinkedList:
                 return True
 
             elif this_node.next_node == self.root:
-                pass
+                return False
+
+            prev_node = this_node
+            this_node = this_node.next_node
