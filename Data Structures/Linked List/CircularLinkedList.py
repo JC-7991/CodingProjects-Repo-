@@ -36,3 +36,6 @@ class CircularLinkedList:
         
         this_node = self.root
         prev_node = None
+
+        while True:
+            pass
