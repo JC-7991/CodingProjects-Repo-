@@ -7,10 +7,10 @@ def is_subset(set, x, sum):
     if(sum == 0):
         return True
 
-    if(x == 0):
+    elif(x == 0):
         return False
   
-    if(set[x - 1] > sum):
+    elif(set[x - 1] > sum):
         return is_subset(set, x - 1, sum)
   
     return is_subset(set, x - 1, sum) or is_subset(set, x - 1, sum - set[x - 1])
