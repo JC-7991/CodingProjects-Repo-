@@ -63,4 +63,8 @@ class CircularLinkedList:
             this_node = this_node.next_node
 
     def print_list(self):
-        pass
+        
+        if self.root is None:
+            return
+
+        
