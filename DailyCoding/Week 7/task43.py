@@ -18,7 +18,7 @@ class Stack:
 
         if self.maxes:
             self.maxes.append(max(val, self.maxes[-1]))
-            
+
         else:
             self.maxes.append(val)
 
@@ -39,4 +39,6 @@ if __name__ == "__main__":
     for i in range(15):
         stack.push(i)
 
+    print(stack.max())
+    stack.pop()
     print(stack.max())
