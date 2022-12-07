@@ -67,4 +67,4 @@ class CircularLinkedList:
         if self.root is None:
             return
 
-        
+        this_node = self.root
