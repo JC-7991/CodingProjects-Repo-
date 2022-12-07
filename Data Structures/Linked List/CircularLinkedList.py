@@ -68,3 +68,5 @@ class CircularLinkedList:
             return
 
         this_node = self.root
+
+        print(this_node, end = '->')
