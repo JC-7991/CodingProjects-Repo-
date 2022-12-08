@@ -83,3 +83,5 @@ if __name__ == "__main__":
         cll.add(i)
 
     print("Size: " + str(cll.size))
+    print(cll.find(5))
+    print(cll.find(6))
