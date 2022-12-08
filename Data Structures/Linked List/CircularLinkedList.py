@@ -73,3 +73,4 @@ class CircularLinkedList:
 
         while this_node.next_node != self.root:
             this_node = this_node.next_node
+            print(this_node, end = '->')
