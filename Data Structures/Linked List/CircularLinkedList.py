@@ -82,10 +82,3 @@ for i in [3, 5, 7, 9, 11]:
 
 print("Size: " + str(cll.size))
 print(cll.find(5))
-
-my_node = cll.root
-print(my_node, end = '->')
-for i in range(8):
-    my_node = my_node.next_node
-    print(my_node, end = '->')
-print()
