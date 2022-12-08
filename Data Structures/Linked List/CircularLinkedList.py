@@ -78,3 +78,8 @@ class CircularLinkedList:
 if __name__ == "__main__":
 
     cll = CircularLinkedList()
+
+    for i in [3, 5, 7, 9, 11]:
+        cll.add(i)
+
+    print("Size: " + str(cll.size))
