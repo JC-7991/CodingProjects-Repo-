@@ -74,3 +74,7 @@ class CircularLinkedList:
             this_node = this_node.next_node
             print(this_node, end = '->')
         print()
+
+if __name__ == "__main__":
+
+    cll = CircularLinkedList()
