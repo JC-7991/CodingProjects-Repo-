@@ -15,3 +15,5 @@ class DoublyLinkedList:
 
         else:
             new_node = Node(d, self.root)
+            self.root.prev_node = new_node
+            self.root = new_node
