@@ -1,3 +1,5 @@
+from CircularLinkedList import *
+
 class DoublyLinkedList:
 
     def __init__(self, r = None):
