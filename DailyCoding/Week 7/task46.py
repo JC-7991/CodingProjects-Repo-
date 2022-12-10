@@ -15,7 +15,7 @@ def longestPalin(str):
         for j in range(i, n):
             
             flag = 1
-            
+
             for k in range(0, ((j - i) // 2) + 1):
                 if(str[i + k] != str[j - k]):
                     flag = 0
@@ -31,4 +31,4 @@ def longestPalin(str):
 
 if __name__ == '__main__':
     str = "gohangasalamiimalasgnahog" 
-    print("\nLength is:", longestPalin(str))
+    print("\nLength:", longestPalin(str))
