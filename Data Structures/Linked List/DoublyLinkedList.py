@@ -12,3 +12,6 @@ class DoublyLinkedList:
         if self.size == 0:
             self.root = Node(d)
             self.last = self.root
+
+        else:
+            pass
