@@ -8,7 +8,6 @@ import random
 def rand7():
     return random.randint(1, 7)
 
-
 def rand5():
 
     s = 7 * rand7() + rand7() - 7

@@ -14,4 +14,4 @@ class DoublyLinkedList:
             self.last = self.root
 
         else:
-            pass
+            new_node = Node(d, self.root)
