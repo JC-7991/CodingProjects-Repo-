@@ -19,7 +19,7 @@ def rand5():
     return s % 5 + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     cnt = 1000000
 
