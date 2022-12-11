@@ -7,7 +7,7 @@ class DoublyLinkedList:
         self.last = r
         self.size = 0
 
-    def add (self, d):
+    def add(self, d):
         
         if self.size == 0:
             self.root = Node(d)
