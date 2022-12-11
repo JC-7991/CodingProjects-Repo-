@@ -16,11 +16,11 @@ def max_prof(price, start, end):
  
             if(price[j] > price[i]):
 
-                curr_profit = price[j] - price[i] + \
+                cnt = price[j] - price[i] + \
                     max_prof(price, start, i - 1) + \
                     max_prof(price, j + 1, end)
  
-                profit = max(profit, curr_profit)
+                profit = max(profit, cnt)
  
     return profit
  
