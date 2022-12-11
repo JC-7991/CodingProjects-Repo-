@@ -24,7 +24,7 @@ def maxProfit(price, start, end):
  
     return profit
  
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     price = [5, 9, 8, 11, 10, 7]
     n = len(price)
