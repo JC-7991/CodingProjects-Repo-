@@ -4,7 +4,7 @@
 # could have made from buying and selling that stock once. 
 # You must buy before you can sell it.
 
-def maxProfit(price, start, end):
+def max_prof(price, start, end):
  
     if(end <= start):
         return 0
@@ -17,8 +17,8 @@ def maxProfit(price, start, end):
             if(price[j] > price[i]):
 
                 curr_profit = price[j] - price[i] + \
-                    maxProfit(price, start, i - 1) + \
-                    maxProfit(price, j + 1, end)
+                    max_prof(price, start, i - 1) + \
+                    max_prof(price, j + 1, end)
  
                 profit = max(profit, curr_profit)
  
@@ -29,4 +29,4 @@ if __name__ == "__main__":
     price = [5, 9, 8, 11, 10, 7]
     n = len(price)
     x = n - 1
-    print(maxProfit(price, 0, x))
+    print(max_prof(price, 0, x))
