@@ -25,6 +25,9 @@ class DoublyLinkedList:
         this_node = self.root
 
         while this_node is not None:
-            
+
             if this_node.data == d:
-                pass
+                return d
+            
+            elif this_node.next_node == None:
+                return False
