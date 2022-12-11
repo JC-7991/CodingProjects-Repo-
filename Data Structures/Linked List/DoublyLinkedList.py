@@ -34,3 +34,6 @@ class DoublyLinkedList:
 
             else:
                 this_node = this_node.next_node
+
+    def remove(self, d):
+        pass
