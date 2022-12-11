@@ -31,3 +31,6 @@ class DoublyLinkedList:
             
             elif this_node.next_node == None:
                 return False
+
+            else:
+                this_node = this_node.next_node
