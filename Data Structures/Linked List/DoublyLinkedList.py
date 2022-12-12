@@ -40,4 +40,8 @@ class DoublyLinkedList:
         this_node = self.root
 
         while this_node is not None:
-            pass
+            
+            if this_node.data == d:
+                if this_node.prev_node is not None:
+                    if this_node.next_node is not None:
+                        pass
