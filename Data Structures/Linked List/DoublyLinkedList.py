@@ -36,4 +36,8 @@ class DoublyLinkedList:
                 this_node = this_node.next_node
 
     def remove(self, d):
-        pass
+        
+        this_node = self.root
+
+        while this_node is not None:
+            pass
