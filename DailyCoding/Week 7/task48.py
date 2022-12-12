@@ -8,20 +8,20 @@ class Node:
         self.left = None
         self.right = None
  
-def buildTree(inOrder, preOrder, inStrt, inEnd):
+def buildTree(inOrder, preOrder, start, end):
      
-    if(inStrt > inEnd):
+    if(start > end):
         return None
  
     tNode = Node(preOrder[buildTree.preIndex])
     buildTree.preIndex += 1
 
-    if inStrt == inEnd:
+    if start == end:
         return tNode
 
-    inIndex = search(inOrder, inStrt, inEnd, tNode.data)
-    tNode.left = buildTree(inOrder, preOrder, inStrt, inIndex-1)
-    tNode.right = buildTree(inOrder, preOrder, inIndex + 1, inEnd)
+    inIndex = search(inOrder, start, end, tNode.data)
+    tNode.left = buildTree(inOrder, preOrder, start, inIndex-1)
+    tNode.right = buildTree(inOrder, preOrder, inIndex + 1, end)
  
     return tNode
  
@@ -31,23 +31,23 @@ def search(arr, start, end, value):
         if arr[i] == value:
             return i
  
-def printInorder(node):
+def printOrder(node):
 
     if node is None:
         return
 
-    printInorder(node.left)
+    printOrder(node.left)
     print(node.data, end = ' ')
-    printInorder(node.right)
+    printOrder(node.right)
      
 if __name__ == "__main__":
-    
+
     inOrder = ['D', 'B', 'E', 'A', 'F', 'C']
     preOrder = ['A', 'B', 'D', 'E', 'C', 'F']
 
     buildTree.preIndex = 0
     root = buildTree(inOrder, preOrder, 0, len(inOrder)-1)
 
-    print ("Inorder traversal of the constructed tree:")
-    printInorder(root)
+    print("Inorder traversal of the constructed tree:")
+    printOrder(root)
  
