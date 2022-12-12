@@ -20,7 +20,7 @@ def buildTree(inOrder, preOrder, start, end):
         return tNode
 
     inIndex = search(inOrder, start, end, tNode.data)
-    tNode.left = buildTree(inOrder, preOrder, start, inIndex-1)
+    tNode.left = buildTree(inOrder, preOrder, start, inIndex - 1)
     tNode.right = buildTree(inOrder, preOrder, inIndex + 1, end)
  
     return tNode
