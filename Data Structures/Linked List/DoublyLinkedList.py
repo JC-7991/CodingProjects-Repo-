@@ -43,7 +43,9 @@ class DoublyLinkedList:
             
             if this_node.data == d:
                 if this_node.prev_node is not None:
+                    
                     if this_node.next_node is not None:
-                        
                         this_node.prev_node.next_node = this_node.next_node
                         this_node.next_node.prev_node = this_node.prev_node
+                    else:
+                        pass
