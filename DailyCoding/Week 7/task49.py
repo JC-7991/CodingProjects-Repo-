@@ -6,3 +6,26 @@
 # since we would not take any elements.
 # Do this in O(N) time.
 
+from sys import maxint
+
+def maxSub(a, size):
+ 
+    maxFar = -maxint - 1
+    maxEnding = 0
+ 
+    for i in range(0, size):
+
+        maxEnding = maxEnding + a[i]
+
+        if(maxFar < maxEnding):
+            maxFar = maxEnding
+ 
+        if maxEnding < 0:
+            maxEnding = 0
+
+    return maxFar
+
+if __name__ == "__main__":
+
+    a = [-2, -4, 2, 5, -3, -7, -5, 1, 2, -3]
+    print("Maximum contiguous sum is", maxSub(a, len(a)))
