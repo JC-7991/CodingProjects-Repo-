@@ -27,5 +27,7 @@ def maxSub(a, size):
 
 if __name__ == "__main__":
 
-    a = [-2, -4, 2, 5, -3, -7, -5, 1, 2, -3]
+    a = [34, -50, 42, 14, -5, 86]
     print("Maximum contiguous sum is", maxSub(a, len(a)))
+
+    b = [-5, -1, -8, -9]
