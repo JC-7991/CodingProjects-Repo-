@@ -54,4 +54,5 @@ class DoublyLinkedList:
                         self.last = this_node.prev_node
                 
                 else:
-                    pass
+                    self.root = this_node.next_node
+                    this_node.next_node.prev_node = self.root
