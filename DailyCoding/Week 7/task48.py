@@ -46,7 +46,7 @@ if __name__ == "__main__":
     preOrder = ['A', 'B', 'D', 'E', 'C', 'F']
 
     buildTree.preIndex = 0
-    root = buildTree(inOrder, preOrder, 0, len(inOrder)-1)
+    root = buildTree(inOrder, preOrder, 0, len(inOrder) - 1)
 
     print("Inorder traversal of the constructed tree:")
     printOrder(root)
