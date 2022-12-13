@@ -65,5 +65,5 @@ class DoublyLinkedList:
             
         return False
 
-def print_list(self):
-    pass
+    def print_list(self):
+        pass
