@@ -31,3 +31,4 @@ if __name__ == "__main__":
     print("Maximum contiguous sum is", maxSub(a, len(a)))
 
     b = [-5, -1, -8, -9]
+    print("Maximum contiguous sum is", maxSub(b, len(b)))
