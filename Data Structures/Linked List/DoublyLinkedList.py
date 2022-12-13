@@ -59,3 +59,8 @@ class DoublyLinkedList:
                 
                 self.size -= 1
                 return True
+            
+            else:
+                this_node = this_node.next_node
+            
+        return False
