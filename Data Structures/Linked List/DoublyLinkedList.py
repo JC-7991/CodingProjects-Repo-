@@ -64,3 +64,6 @@ class DoublyLinkedList:
                 this_node = this_node.next_node
             
         return False
+
+def print_list(self):
+    pass
