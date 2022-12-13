@@ -56,3 +56,6 @@ class DoublyLinkedList:
                 else:
                     self.root = this_node.next_node
                     this_node.next_node.prev_node = self.root
+                
+                self.size -= 1
+                return True
