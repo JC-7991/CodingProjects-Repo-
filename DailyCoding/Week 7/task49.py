@@ -11,17 +11,17 @@ from xmlrpc.client import MAXINT
 def maxSub(a, size):
  
     maxFar = -MAXINT - 1
-    maxEnding = 0
+    maxEnd = 0
  
     for i in range(0, size):
 
-        maxEnding = maxEnding + a[i]
+        maxEnd = maxEnd + a[i]
 
-        if(maxFar < maxEnding):
-            maxFar = maxEnding
+        if(maxFar < maxEnd):
+            maxFar = maxEnd
  
-        if maxEnding < 0:
-            maxEnding = 0
+        if maxEnd < 0:
+            maxEnd = 0
 
     return maxFar
 
