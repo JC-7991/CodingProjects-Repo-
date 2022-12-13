@@ -6,11 +6,11 @@
 # since we would not take any elements.
 # Do this in O(N) time.
 
-from sys import maxint
+from xmlrpc.client import MAXINT
 
 def maxSub(a, size):
  
-    maxFar = -maxint - 1
+    maxFar = -MAXINT - 1
     maxEnding = 0
  
     for i in range(0, size):
