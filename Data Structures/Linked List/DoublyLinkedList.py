@@ -79,4 +79,13 @@ class DoublyLinkedList:
         print()
 
 if __name__ == "__main__":
-    
+
+    dll = DoublyLinkedList()
+
+    for i in [5, 9, 3, 8, 9]:
+        dll.add(i)
+        
+    print("Size: " + str(dll.size))
+    dll.print_list
+    dll.remove(8)
+    print("Size: " + str(dll.size))
