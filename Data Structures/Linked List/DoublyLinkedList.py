@@ -89,3 +89,12 @@ if __name__ == "__main__":
     dll.print_list()
     dll.remove(8)
     print("Size: " + str(dll.size))
+
+    print(dll.remove(15))
+    print(dll.find(15))
+    
+    dll.add(21)
+    dll.add(22)
+    dll.remove(5)
+    dll.print_list()
+    print(dll.last.prev_node)
