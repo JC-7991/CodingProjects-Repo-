@@ -66,7 +66,7 @@ class DoublyLinkedList:
         return False
 
     def print_list(self):
-        
+
         if self.root is None:
             return
 
@@ -77,3 +77,6 @@ class DoublyLinkedList:
             this_node = this_node.next_node
             print(this_node, end = '->')
         print()
+
+if __name__ == "__main__":
+    
