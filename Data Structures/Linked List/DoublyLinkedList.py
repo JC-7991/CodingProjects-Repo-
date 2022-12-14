@@ -86,6 +86,6 @@ if __name__ == "__main__":
         dll.add(i)
 
     print("Size: " + str(dll.size))
-    dll.print_list
+    dll.print_list()
     dll.remove(8)
     print("Size: " + str(dll.size))
