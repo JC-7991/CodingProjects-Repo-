@@ -2,7 +2,7 @@
 # Each leaf is an integer and each internal node is one of '+', '−', '∗', or '/'.
 # Given the root to such a tree, write a function to evaluate it.
 
-class node:
+class Node:
 
     def __init__(self, value):
         self.left = None
@@ -34,23 +34,23 @@ def evalTree(root):
  
 if __name__ == "__main__":
  
-    root = node('+')
-    root.left = node('*')
-    root.left.left = node('5')
-    root.left.right = node('-4')
-    root.right = node('-')
-    root.right.left = node('100')
-    root.right.right = node('20')
+    root = Node('+')
+    root.left = Node('*')
+    root.left.left = Node('5')
+    root.left.right = Node('-4')
+    root.right = Node('-')
+    root.right.left = Node('100')
+    root.right.right = Node('20')
     print(evalTree(root))
  
     root = None
-    root = node('+')
-    root.left = node('*')
-    root.left.left = node('5')
-    root.left.right = node('4')
-    root.right = node('-')
-    root.right.left = node('100')
-    root.right.right = node('/')
-    root.right.right.left = node('20')
-    root.right.right.right = node('2')
+    root = Node('+')
+    root.left = Node('*')
+    root.left.left = Node('5')
+    root.left.right = Node('4')
+    root.right = Node('-')
+    root.right.left = Node('100')
+    root.right.right = Node('/')
+    root.right.right.left = Node('20')
+    root.right.right.right = Node('2')
     print(evalTree(root))
