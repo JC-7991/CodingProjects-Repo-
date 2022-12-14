@@ -73,7 +73,7 @@ class DoublyLinkedList:
         this_node = self.root
         print(this_node, end = '->')
 
-        while this_node.next_node != self.root:
+        while this_node.next_node is not None:
             this_node = this_node.next_node
             print(this_node, end = '->')
         print()
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     for i in [5, 9, 3, 8, 9]:
         dll.add(i)
-        
+
     print("Size: " + str(dll.size))
     dll.print_list
     dll.remove(8)
