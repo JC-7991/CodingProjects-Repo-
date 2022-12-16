@@ -6,7 +6,7 @@
 
 from random import randint
 
-def randomizer (arr, k):
+def randomizer(arr, k):
 
     for i in range(k - 1, 0, -1):
         j = randint(0, i + 1)
