@@ -45,7 +45,7 @@ class LRUCache:
         i = self.cache_vals.get_head()
 
         while i is not None:
-            
+
             if i.data == value:
                 return i
             i = i.next
@@ -54,7 +54,7 @@ class LRUCache:
 
     node = self.cache_vals.get_head()
 
-    while node != None :
+    while node != None:
         print(str(node.data) + ", ")
         node = node.next
 
