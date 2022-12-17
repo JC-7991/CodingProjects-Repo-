@@ -39,9 +39,13 @@ class LRUCache:
 
     if value not in self.cache:
         return None
+
     else:
+
         i = self.cache_vals.get_head()
+
         while i is not None:
+            
             if i.data == value:
                 return i
             i = i.next
