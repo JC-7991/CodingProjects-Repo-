@@ -4,3 +4,6 @@ class Tree:
         self.data = data
         self.left = left
         self.right = right
+    
+    def insert(self, data):
+        pass
