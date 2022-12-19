@@ -7,18 +7,18 @@
 def idToShortURL(id):
 
     map = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    shortURL = ""
+    short = ""
       
     while(id > 0):
-        shortURL += map[id % 62]
+        short += map[id % 62]
         id //= 62
   
-    return shortURL[len(shortURL): : -1]
+    return short[len(short): : -1]
   
-def shortURLToId(shortURL):
+def shortURLToId(short):
 
     id = 0
-    for i in shortURL:
+    for i in short:
 
         val_i = ord(i)
 
@@ -36,6 +36,7 @@ def shortURLToId(shortURL):
 if __name__ == "__main__":
 
     id = 12345
-    shortURL = idToShortURL(id)
-    print("Short URL from 12345 is:", shortURL)
-    print("ID from ", shortURL, "is:", shortURLToId(shortURL))
+    short = idToShortURL(id)
+    
+    print("Short URL from 12345 is:", short)
+    print("ID from ", short, "is:", shortURLToId(short))
