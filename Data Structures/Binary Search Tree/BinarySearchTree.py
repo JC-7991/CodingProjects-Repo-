@@ -6,4 +6,6 @@ class Tree:
         self.right = right
     
     def insert(self, data):
-        pass
+        
+        if self.data == data:
+            return False
