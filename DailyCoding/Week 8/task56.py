@@ -4,5 +4,28 @@
 # the graph can be colored such that no two adjacent 
 # vertices share the same color using at most k colors.
 
+from typing import List
+
+def colorable(matrix: List[List[int]], k: int) -> bool:
+
+    min_color = 0
+    vert = len(matrix)
+
+    for vertex in range(vert):
+        colors_required_for_current_vertex = sum(matrix[vertex]) + 1
+        min_color = max(min_color, colors_required_for_current_vertex)
+
+    return min_color <= k
 
 
+if __name__ == "__main__":
+
+    matrix = [
+        [0, 1, 1, 1],
+        [1, 0, 1, 1],
+        [1, 1, 0, 1],
+        [1, 1, 1, 0],
+    ]
+
+    print(colorable(matrix, 4))
+    print(colorable(matrix, 3))
