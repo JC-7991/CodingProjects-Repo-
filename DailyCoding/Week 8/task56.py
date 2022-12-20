@@ -12,8 +12,9 @@ def colorable(matrix: List[List[int]], k: int) -> bool:
     vert = len(matrix)
 
     for vertex in range(vert):
-        colors_required_for_current_vertex = sum(matrix[vertex]) + 1
-        min_color = max(min_color, colors_required_for_current_vertex)
+
+        current_colors = sum(matrix[vertex]) + 1
+        min_color = max(min_color, current_colors)
 
     return min_color <= k
 
