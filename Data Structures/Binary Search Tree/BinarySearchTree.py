@@ -9,3 +9,6 @@ class Tree:
         
         if self.data == data:
             return False
+
+        elif self.data > data:
+            pass
