@@ -11,4 +11,9 @@ class Tree:
             return False
 
         elif self.data > data:
-            pass
+            
+            if self.left is not None:
+                return self.left.insert(data)
+            else:
+                self.left = Tree(data)
+                return True
