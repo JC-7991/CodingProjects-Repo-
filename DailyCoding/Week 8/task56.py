@@ -28,5 +28,8 @@ if __name__ == "__main__":
         [1, 1, 1, 0],
     ]
 
+    print(colorable(matrix, 5))
     print(colorable(matrix, 4))
     print(colorable(matrix, 3))
+    print(colorable(matrix, 2))
+    print(colorable(matrix, 1))
