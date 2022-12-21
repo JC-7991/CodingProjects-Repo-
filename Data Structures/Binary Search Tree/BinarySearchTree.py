@@ -25,3 +25,6 @@ class Tree:
             else:
                 self.right = Tree(data)
                 return True
+
+    def find(self, data):
+        pass
