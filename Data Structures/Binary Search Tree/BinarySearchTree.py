@@ -27,4 +27,6 @@ class Tree:
                 return True
 
     def find(self, data):
-        pass
+        
+        if self.data == data:
+            return data
