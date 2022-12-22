@@ -18,7 +18,7 @@ def line_length(s, k):
 
         w = x[i]
 
-        if (len(w) + lent + 1) <= k:
+        if(len(w) + lent + 1) <= k:
 
             lent += len(w) + 1
             arr.append(w)
