@@ -10,8 +10,7 @@ def line_length(s, k):
 
     x = s.split()
     
-    output = []
-    arr = []
+    arr, output = [], []
     lent = -1
     i = 0
     
