@@ -56,5 +56,6 @@ def binarySearch(arr, low, high, key):
 if __name__ == "__main__":
 
     arr = [5, 6, 7, 8, 9, 10, 1, 2, 3]
+    arr = [3, 7, 10, 3, 4, 2, 1, 1, 9]
     print("Index of the element is:", \
-        pivotSearch(arr, len(arr), 3))
+        pivotSearch(arr, len(arr), 10))
