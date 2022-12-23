@@ -4,10 +4,10 @@
 
 def pivotSearch(arr, n, key):
  
-    pivot = pivotFind(arr, 0, n-1)
+    pivot = pivotFind(arr, 0, n - 1)
  
     if pivot == -1:
-        return binarySearch(arr, 0, n-1, key)
+        return binarySearch(arr, 0, n - 1, key)
  
     if arr[pivot] == key:
         return pivot
@@ -25,7 +25,7 @@ def pivotFind(arr, low, high):
     if high == low:
         return low
 
-    mid = int((low + high)/2)
+    mid = int((low + high) / 2)
  
     if mid < high and arr[mid] > arr[mid + 1]:
         return mid
