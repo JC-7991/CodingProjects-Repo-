@@ -2,3 +2,4 @@
 # computers over a low-bandwidth network. What 
 # if we know the files in the two computers are mostly the same?
 
+# Gonna be honest, this one was too much for my brain to figure out.
