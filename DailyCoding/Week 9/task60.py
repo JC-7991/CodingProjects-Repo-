@@ -6,7 +6,7 @@
 # Given the multiset {15, 5, 20, 10, 35}, it would return false, 
 # since we can't split it up into two subsets that add up to the same sum.
 
-def isSubsetSum(arr, n, sum):
+def subset(arr, n, sum):
 
     if sum == 0:
         return True
@@ -14,11 +14,11 @@ def isSubsetSum(arr, n, sum):
         return False
 
     if arr[n - 1] > sum:
-        return isSubsetSum(arr, n - 1, sum)
+        return subset(arr, n - 1, sum)
  
-    return isSubsetSum(arr, n - 1, sum) or isSubsetSum(arr, n - 1, sum - arr[n - 1])
+    return subset(arr, n - 1, sum) or subset(arr, n - 1, sum - arr[n - 1])
  
-def findPartion(arr, n):
+def partion(arr, n):
 
     sum = 0
 
@@ -28,14 +28,14 @@ def findPartion(arr, n):
     if sum % 2 != 0:
         return False
 
-    return isSubsetSum(arr, n, sum // 2)
+    return subset(arr, n, sum // 2)
 
 if __name__ == "__main__":
 
     arr = [4, 12, 3, 8, 7, 48]
     n = len(arr)
  
-    if findPartion(arr, n) == True:
+    if partion(arr, n) == True:
         print("Can be divided into two subsets of equal sum.")
     else:
         print("Can not be divided into two subsets of equal sum.")
