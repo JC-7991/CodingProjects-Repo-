@@ -3,7 +3,7 @@
 # Do this faster than the naive method of repeated multiplication.
 # For example, pow(2, 10) should return 1024.
 
-def pow(base: int, power: int) -> int:
+def power(base: int, power: int) -> int:
 
     if power == 0:
         return 1
@@ -16,4 +16,4 @@ def pow(base: int, power: int) -> int:
 
 if __name__ == "__main__":
 
-    print(pow(2, 10))
+    print(power(2, 10))
