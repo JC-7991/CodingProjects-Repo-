@@ -44,3 +44,6 @@ class Tree:
                 return False
             else:
                 return self.right.find(data)
+
+    def get_size(self):
+        pass
