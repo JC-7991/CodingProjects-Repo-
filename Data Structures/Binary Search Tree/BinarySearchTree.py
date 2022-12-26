@@ -38,4 +38,5 @@ class Tree:
             else:
                 return self.left.find(data)
         
-        elif 
+        elif self.data < data:
+            pass
