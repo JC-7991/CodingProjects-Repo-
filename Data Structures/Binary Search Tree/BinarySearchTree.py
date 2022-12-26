@@ -53,3 +53,5 @@ class Tree:
             return 1 + self.left.get_size()
         elif self.right:
             return 1 + self.right.get_size()
+        else:
+            return 1
