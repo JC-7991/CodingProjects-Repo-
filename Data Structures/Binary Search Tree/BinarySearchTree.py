@@ -55,3 +55,6 @@ class Tree:
             return 1 + self.right.get_size()
         else:
             return 1
+
+    def preorder(self):
+        pass
