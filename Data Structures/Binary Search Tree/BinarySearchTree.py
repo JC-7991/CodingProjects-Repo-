@@ -30,3 +30,6 @@ class Tree:
         
         if self.data == data:
             return data
+        
+        elif self.data > data:
+            pass
