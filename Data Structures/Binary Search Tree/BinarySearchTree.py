@@ -49,10 +49,13 @@ class Tree:
         
         if self.left is not None and self.right is not None:
             return 1 + self.left.get_size() + self.right.get_size()
+
         elif self.left:
             return 1 + self.left.get_size()
+
         elif self.right:
             return 1 + self.right.get_size()
+            
         else:
             return 1
 
