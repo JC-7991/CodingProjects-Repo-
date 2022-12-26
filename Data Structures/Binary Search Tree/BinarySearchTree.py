@@ -46,4 +46,6 @@ class Tree:
                 return self.right.find(data)
 
     def get_size(self):
-        pass
+        
+        if self.left is not None and self.right is not None:
+            return 1 + self.left.get_size() + self.right.get_size()
