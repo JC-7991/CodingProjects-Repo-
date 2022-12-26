@@ -39,4 +39,8 @@ class Tree:
                 return self.left.find(data)
         
         elif self.data < data:
-            pass
+            
+            if self.right is None:
+                return False
+            else:
+                return self.right.find(data)
