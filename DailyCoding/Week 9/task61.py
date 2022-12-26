@@ -19,3 +19,5 @@ if __name__ == "__main__":
     print(power(1, 10))
     print(power(2, 10))
     print(power(3, 10))
+    print(power(4, 10))
+    print(power(5, 10))
