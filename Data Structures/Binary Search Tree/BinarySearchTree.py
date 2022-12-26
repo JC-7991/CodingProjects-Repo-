@@ -32,4 +32,10 @@ class Tree:
             return data
         
         elif self.data > data:
-            pass
+            
+            if self.left is None:
+                return False
+            else:
+                return self.left.find(data)
+        
+        elif 
