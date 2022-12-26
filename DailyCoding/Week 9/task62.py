@@ -16,7 +16,7 @@ def paths(m, n):
     return paths(m - 1, n) + paths(m, n - 1)
  
 if __name__ == "__main__":
-    
-    m = 3
-    n = 3
+
+    m = 5
+    n = 5
     print(paths(m, n))
