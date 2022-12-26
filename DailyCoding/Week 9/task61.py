@@ -16,5 +16,6 @@ def power(base, power):
 
 if __name__ == "__main__":
 
+    print(power(1, 10))
     print(power(2, 10))
     print(power(3, 10))
