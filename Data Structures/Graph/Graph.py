@@ -25,4 +25,6 @@ class Graph:
             return False
 
     def print_graph(self):
-        pass
+        
+        for key in sorted(list(self.vertices.keys())):
+            print(key, sorted(list(self.vertices[key].neighbors)))
