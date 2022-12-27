@@ -14,6 +14,7 @@ class Tree:
             
             if self.left is not None:
                 return self.left.insert(data)
+
             else:
                 self.left = Tree(data)
                 return True
@@ -22,6 +23,7 @@ class Tree:
 
             if self.right is not None:
                 return self.right.insert(data)
+
             else:
                 self.right = Tree(data)
                 return True
@@ -35,6 +37,7 @@ class Tree:
             
             if self.left is None:
                 return False
+
             else:
                 return self.left.find(data)
         
@@ -42,6 +45,7 @@ class Tree:
             
             if self.right is None:
                 return False
+
             else:
                 return self.right.find(data)
 
@@ -60,4 +64,16 @@ class Tree:
             return 1
 
     def preorder(self):
+        
+        if self is not None:
+
+            print(self.data, end = ' ')
+
+            if self.left is not None:
+                self.left.preorder()
+
+            if self.right:
+                self.right.preorder()
+
+    def inorder(self):
         pass
