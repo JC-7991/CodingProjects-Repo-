@@ -19,26 +19,26 @@ def wordOccurance(matrix: List[List[str]], word: str) -> bool:
 
     for i in range(n):
 
-        row_string = "".join(matrix[i])
+        row = "".join(matrix[i])
 
-        if word in row_string:
+        if word in row:
             return True
 
     for j in range(m):
 
-        column_string = ""
+        column = ""
 
         for i in range(n):
-            column_string += matrix[i][j]
+            column += matrix[i][j]
 
-        if word in column_string:
+        if word in column:
             return True
 
     return False
 
 
 if __name__ == "__main__":
-    
+
     matrix = [
         ["F", "A", "C", "I"],
         ["O", "B", "Q", "P"],
