@@ -83,6 +83,9 @@ class Tree:
                 self.left.inorder()
 
             print(self.data, end = ' ')
-            
+
             if self.right is not None:
                 self.right.inorder()
+
+if __name__ == "__main__":
+    pass
