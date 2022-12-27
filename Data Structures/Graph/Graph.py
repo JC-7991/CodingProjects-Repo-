@@ -10,3 +10,6 @@ class Vertex:
 class Graph:
 
     vertices = {}
+
+    def add_vertex(self, vertex):
+        pass
