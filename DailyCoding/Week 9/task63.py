@@ -10,3 +10,42 @@
 # since it's the leftmost column. Similarly, given the 
 # target word 'MASS', you should return true, since it's the last row.
 
+from typing import List
+
+def wordOccurance(matrix: List[List[str]], word: str) -> bool:
+
+    n = len(matrix)
+    m = len(matrix[0])
+
+    for i in range(n):
+
+        row_string = "".join(matrix[i])
+
+        if word in row_string:
+            return True
+
+    for j in range(m):
+
+        column_string = ""
+
+        for i in range(n):
+            column_string += matrix[i][j]
+
+        if word in column_string:
+            return True
+
+    return False
+
+
+if __name__ == "__main__":
+    
+    matrix = [
+        ["F", "A", "C", "I"],
+        ["O", "B", "Q", "P"],
+        ["A", "N", "O", "B"],
+        ["M", "A", "S", "S"],
+    ]
+
+    print(wordOccurance(matrix, "FOAM"))
+    print(wordOccurance(matrix, "MASS"))
+    print(wordOccurance(matrix, "FORM"))
