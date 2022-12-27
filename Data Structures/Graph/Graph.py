@@ -16,5 +16,10 @@ class Graph:
     def add_edge(self, u, v):
         
         if u in self.vertices and v in self.vertices:
+            
             self.vertices[u].add_neighbor(v)
             self.vertices[v].add_neighbor(u)
+            return True
+        
+        else:
+            return False
