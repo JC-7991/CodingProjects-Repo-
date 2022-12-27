@@ -18,3 +18,6 @@ class Graph:
             return True
         else:
             return False
+
+    def add_edge(self, u, v):
+        pass
