@@ -76,4 +76,13 @@ class Tree:
                 self.right.preorder()
 
     def inorder(self):
-        pass
+        
+        if self is not None:
+
+            if self.left is not None:
+                self.left.inorder()
+
+            print(self.data, end = ' ')
+            
+            if self.right is not None:
+                self.right.inorder()
