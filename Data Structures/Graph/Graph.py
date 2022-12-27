@@ -6,5 +6,3 @@ class Vertex:
     
     def add_neighbor(self, v):
         self.neighbors.add(v)
-    
-    
