@@ -28,3 +28,6 @@ class Graph:
         
         for key in sorted(list(self.vertices.keys())):
             print(key, sorted(list(self.vertices[key].neighbors)))
+
+if __name__ == "__main__":
+    pass
