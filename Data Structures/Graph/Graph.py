@@ -29,4 +29,14 @@ class Graph:
             print(key, sorted(list(self.vertices[key].neighbors)))
 
 if __name__ == "__main__":
-    pass
+
+    g = Graph()
+    a = Vertex('A')
+
+    g.add_vertex(a)
+    g.add_vertex(Vertex('B'))
+    
+    edges = ['AB', 'AE', 'BF', 'CG', 'DE', 'DH', 'EH', 'FG', 'FI', 'FJ', 'GJ']
+
+    for edge in edges:
+        g.add
