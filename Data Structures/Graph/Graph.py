@@ -16,3 +16,5 @@ class Graph:
         if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
             self.vertices[vertex.name] = vertex
             return True
+        else:
+            return False
