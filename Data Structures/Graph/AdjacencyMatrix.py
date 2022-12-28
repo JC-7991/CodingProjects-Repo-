@@ -58,3 +58,5 @@ if __name__ == "__main__":
 
     for i in range(ord('A'), ord('K')):
         g.add_vertex(Vertex(chr(i)))
+
+    
