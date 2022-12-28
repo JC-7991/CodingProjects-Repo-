@@ -20,3 +20,8 @@ class Graph:
             
             self.edges.append([0] * (len(self.edges) + 1))
             self.edge_indices[vertex.name] = len(self.edge_indices)
+
+            return True
+        
+        else:
+            return False
