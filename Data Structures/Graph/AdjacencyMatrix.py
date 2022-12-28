@@ -43,3 +43,7 @@ class Graph:
         for v, i in sorted(self.edge_indices.items()):
 
             print(v + ' ', end = ' ')
+
+            for j in range(len(self.edges)):
+                print(self.edges[i][j], end = ' ')
+            print(' ')
