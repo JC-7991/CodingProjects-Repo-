@@ -49,4 +49,12 @@ class Graph:
             print(' ')
 
 if __name__ == "__main__":
-    pass
+    
+    g = Graph()
+    a = Vertex('A')
+
+    g.add_vertex(a)
+    g.add_vertex(Vertex('B'))
+
+    for i in range(ord('A'), ord('K')):
+        g.add_vertex(Vertex(chr(i)))
