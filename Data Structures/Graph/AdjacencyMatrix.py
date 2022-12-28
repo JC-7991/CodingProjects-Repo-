@@ -10,4 +10,10 @@ class Graph:
     edge_indices = {}
 
     def add_vertex(self, vertex):
-        pass
+
+        if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
+
+            self.vertices[vertex.name] = vertex
+            
+            for row in self.edges:
+                row.append(0)
