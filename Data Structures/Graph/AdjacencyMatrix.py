@@ -37,3 +37,9 @@ class Graph:
 
         else:
             return False
+
+    def print_graph(self):
+
+        for v, i in sorted(self.edge_indices.items()):
+
+            print(v + ' ', end = ' ')
