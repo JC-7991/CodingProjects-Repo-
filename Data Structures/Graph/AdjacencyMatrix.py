@@ -25,3 +25,6 @@ class Graph:
         
         else:
             return False
+
+    def add_edge(self, u, v, weight = 1):
+        pass
