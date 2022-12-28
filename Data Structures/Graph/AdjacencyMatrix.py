@@ -29,5 +29,11 @@ class Graph:
     def add_edge(self, u, v, weight = 1):
         
         if u in self.vertices and v in self.vertices:
+
             self.edges[self.edge_indices[u]][self.edge_indices[v]] = weight
             self.edges[self.edge_indices[v]][self.edge_indices[u]] = weight
+
+            return True
+
+        else:
+            return False
