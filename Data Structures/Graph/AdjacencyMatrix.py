@@ -8,3 +8,6 @@ class Graph:
     vertices = {}
     edges = []
     edge_indices = {}
+
+    def add_vertex(self, vertex):
+        pass
