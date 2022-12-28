@@ -47,3 +47,6 @@ class Graph:
             for j in range(len(self.edges)):
                 print(self.edges[i][j], end = ' ')
             print(' ')
+
+if __name__ == "__main__":
+    pass
