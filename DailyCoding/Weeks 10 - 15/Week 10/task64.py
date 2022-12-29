@@ -25,7 +25,7 @@ def solveKnight(n):
     pos = 1
 
     if(not solveTour(n, board, 0, 0, move_x, move_y, pos)):
-        print("Solution does not exist")
+        print("Solution does not exist.")
     else:
         printAll(n, board)
  
