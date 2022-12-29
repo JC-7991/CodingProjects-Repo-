@@ -12,7 +12,7 @@ def safe(x, y, board):
     return False
  
 def printAll(n, board):
-    
+
     for i in range(n):
         for j in range(n):
             print(board[i][j], end = ' ')
@@ -20,14 +20,14 @@ def printAll(n, board):
  
 def solveKnight(n):
 
-    board = [[-1 for i in range(n)]for i in range(n)]
+    board = [[-1 for i in range(n)] for i in range(n)]
     move_x = [2, 1, -1, -2, -2, -1, 1, 2]
     move_y = [1, 2, 2, 1, -1, -2, -2, -1]
     board[0][0] = 0
     pos = 1
 
     if(not solveTour(n, board, 0, 0, move_x, move_y, pos)):
-        print("Solution does not exist.")
+        print("Solution not found.")
     else:
         printAll(n, board)
  
