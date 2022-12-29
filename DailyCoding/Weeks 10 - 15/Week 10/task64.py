@@ -30,6 +30,7 @@ def solveKnight(n):
 
     if(not solveTour(n, board, 0, 0, move_x, move_y, pos)):
         print("Solution not found.")
+        
     else:
         printAll(n, board)
  
