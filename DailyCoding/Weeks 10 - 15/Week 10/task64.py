@@ -6,11 +6,13 @@
 n = 8
 
 def safe(x, y, board):
+
     if(x >= 0 and y >= 0 and x < n and y < n and board[x][y] == -1):
         return True
     return False
  
 def printAll(n, board):
+    
     for i in range(n):
         for j in range(n):
             print(board[i][j], end = ' ')
