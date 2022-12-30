@@ -22,7 +22,7 @@ def spiral(matrix):
         cr = x + dr[z]
         cc = y + dc[z]
  
-        if (0 <= cr and cr < m and 0 <= cc and cc < n and not(seen[cr][cc])):
+        if(0 <= cr and cr < m and 0 <= cc and cc < n and not(seen[cr][cc])):
             x = cr
             y = cc
 
