@@ -46,5 +46,3 @@ if __name__ == "__main__":
  
     for x in spiral(a):
         print(x, end = " ")
-
-    print()
