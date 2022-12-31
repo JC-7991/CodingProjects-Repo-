@@ -7,16 +7,16 @@
 import random
 
 def unbiasedCoin():
-    return random.choice(['H','T'])
+    return random.choice(['H', 'T'])
 
 def biasedCoin():
-    return random.choice(['H','T', 'H'])
+    return random.choice(['H', 'T', 'H'])
 
 if __name__ == "__main__":
 
-    print('COIN FLIP: ', unbiasedCoin())
-    print('COIN FLIP: ', biasedCoin())
-    print('COIN FLIP: ', unbiasedCoin())
-    print('COIN FLIP: ', biasedCoin())
-    print('COIN FLIP: ', unbiasedCoin())
-    print('COIN FLIP: ', biasedCoin())
+    print('COIN FLIP (unbiased): ', unbiasedCoin())
+    print('COIN FLIP (biased)  : ', biasedCoin())
+    print('COIN FLIP (unbiased): ', unbiasedCoin())
+    print('COIN FLIP (biased)  : ', biasedCoin())
+    print('COIN FLIP (unbiased): ', unbiasedCoin())
+    print('COIN FLIP (biased)  : ', biasedCoin())
