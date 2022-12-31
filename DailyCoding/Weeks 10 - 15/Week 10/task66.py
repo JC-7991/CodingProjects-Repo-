@@ -14,9 +14,9 @@ def biasedCoin():
 
 if __name__ == "__main__":
 
-    print('COIN FLIP (unbiased): ', unbiasedCoin())
-    print('COIN FLIP (biased)  : ', biasedCoin())
-    print('COIN FLIP (unbiased): ', unbiasedCoin())
-    print('COIN FLIP (biased)  : ', biasedCoin())
-    print('COIN FLIP (unbiased): ', unbiasedCoin())
-    print('COIN FLIP (biased)  : ', biasedCoin())
+    print('COIN FLIP (unbiased) : ', unbiasedCoin())
+    print('COIN FLIP (biased)   : ', biasedCoin())
+    print('COIN FLIP (unbiased) : ', unbiasedCoin())
+    print('COIN FLIP (biased)   : ', biasedCoin())
+    print('COIN FLIP (unbiased) : ', unbiasedCoin())
+    print('COIN FLIP (biased)   : ', biasedCoin())
