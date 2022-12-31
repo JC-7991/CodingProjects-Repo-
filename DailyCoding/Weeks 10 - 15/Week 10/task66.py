@@ -4,3 +4,15 @@
 # the bias of the coin.
 # Write a function to simulate an unbiased coin toss.
 
+import random
+
+def unbiasedCoin():
+    return random.choice(['H','T'])
+
+if __name__ == "__main__":
+
+    print('COIN FLIP: ', unbiasedCoin())
+    print('COIN FLIP: ', unbiasedCoin())
+    print('COIN FLIP: ', unbiasedCoin())
+    print('COIN FLIP: ', unbiasedCoin())
+    print('COIN FLIP: ', unbiasedCoin())
