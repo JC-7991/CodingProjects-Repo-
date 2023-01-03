@@ -7,7 +7,7 @@ import sys
 def largest(arr, n):
  
     if n < 3:
-        return -1
+        return 0
 
     maxProd = -(sys.maxsize - 1)
      
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     
     max = largest(arr, n)
     
-    if max == -1:
+    if max == 0:
         print("No max product found.")
 
     else:
