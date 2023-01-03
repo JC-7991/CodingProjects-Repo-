@@ -14,7 +14,6 @@ def largest(arr, n):
     for i in range(0, n - 2):
         for j in range(i + 1, n - 1):
             for k in range(j + 1, n):
-
                 maxProd = max(maxProd, arr[i] * arr[j] * arr[k])
  
     return maxProd
